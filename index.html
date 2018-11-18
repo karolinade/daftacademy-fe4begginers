@@ -3,11 +3,15 @@
 
  <head>
   <title> 6BMB6 </title>
+  <link rel="stylesheet" href="main.css">
  </head>
 
  <body>
+  <header class="header">
+        <h1 class="page__brand">
+        <img src="./images/logo.png" alt="logo" />
+        </h1>
   <nav class="navbar">
-      <img src="./images/logo.png" alt="logo">
     <ul class="menu">
         <li class="menu__item"><a href="#home">HOME</a></li>
         <li class="menu__item"><a href="#about">ABOUT</a></li>
@@ -16,16 +20,20 @@
         <li class="menu__item"><a href="#photos">PHOTOS</a></li>
         <li class="menu__item"><a href="#contact">CONTACT</a></li>
     </ul>
+  </nav>
+  </header>
+  <footer class="footer">
     <ul class="social">
         <li class="social__item"><a href="https://www.facebook.com/6BMband" target="_blank"><img src="./images/fb.svg" alt="Facebook"></a></li>
         <li class="social__item"><a href="https://www.instagram.com/6bmband/?hl=pl" target="_blank"><img src="./images/insta.svg" alt="Instagram"></a></li>
         <li class="social__item"><a href="https://www.last.fm/pl/music/6bm" target="_blank"><img src="./images/last.svg" alt="Last.fm"></a></li>
         <li class="social__item"><a href="https://www.youtube.com/channel/UCDqm0F_UFieDt_C4TRPbepQ" target="_blank"><img src="./images/yout.svg" alt="Youtube"></a></li>
-    </ul>
-  </nav>
+        </ul>
+  </footer>
+
   <main class="main">
       <article id="home">
-          <ul>
+          <ul class="band__members">
               <li>
                   <div>
                     <img src="./images/band-member01.png" alt="Kamil Zgondek">
@@ -58,7 +66,7 @@
       </article>
 
       <article id="about">
-          <h1>ABOUT</h1>
+          <h2>ABOUT</h2>
           <img src="./imageS/band01.jpg" alt="Zespół">
           <div>
           <h3>STRAIGHT FORM LUBLIN</h3>
@@ -74,7 +82,7 @@
       </article>
 
       <article id="concerts">
-          <h1>CONCERTS</h1>
+          <h2>CONCERTS</h2>
           <div>
               <img src="./images/band02_WiechnikMarcin.jpg" alt="Zespół">
               <div>
@@ -118,12 +126,12 @@
       </article>
 
       <article id="video">
-          <h1>VIDEO</h1>
+          <h2>VIDEO</h2>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </article>
 
       <article id="photos">
-          <h1>PHOTOS</h1>
+          <h2>PHOTOS</h2>
           <div>
               <img src="./images/band05_JakubBodys.jpg" alt="Zespół">
           </div>
@@ -154,7 +162,7 @@
       </article>
       
       <article>
-      <h1>CONTACT</h1>
+      <h2>CONTACT</h2>
       <div>
           <div>
               <img src="./images/band12.jpg" alt="Zespół">
