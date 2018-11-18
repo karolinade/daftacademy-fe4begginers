@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #300e36;
+}
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+#home {
+    min-height: 100vh;
+}
+
+#about {
+    min-height: 100vh;
+}
+
+#concerts {
+    min-height: 100vh;
+}
+
+#video {
+    min-height: 100vh;
+}
+
+#photos {
+    min-height: 100vh;
+}
+
+#contact {
+    min-height: 100vh
+}
