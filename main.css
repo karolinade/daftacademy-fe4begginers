@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #300e36;
+    background-color: #25072e;
 }
 
 .header {
@@ -9,9 +9,71 @@ body {
     left: 20px;
 }
 
+.section__header {
+    font-family: 'Open Sans';
+    font-size: 28px;
+    color: #ec008c;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 4.5px;
+    padding-top: 30px;
+    margin-right: 30px;
+}
+
 .content__section {
     min-height: 100vh;
 }
+
+/*HOME*/
+.band__members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+/*ABOUT*/
+.about__photo {
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 50vw; 
+    height: 70vh;
+    border-top: 3px solid #ec008c;
+}
+
+/*CONCERTS*/
+
+
+/*VIDEO*/
+
+iframe {
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 60vw;
+    height: 70vh;
+    border-top: 3px solid #ec008c;
+}
+
+/*PHOTOS*/
+
+.gallery__item {
+    width: 20vw; 
+    height: auto;
+    margin: 5px;
+    border-top: 3px solid #ec008c;
+}
+
+.gallery__row {
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px
+} 
+
+/*CONTACT*/
+
+
 
 .footer {
     position: fixed;
