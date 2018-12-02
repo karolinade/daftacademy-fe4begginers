@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 h1, h2, h3 {
     margin: 0;
 }
@@ -101,6 +102,7 @@ body {
 }
 
 /* PAGE LAYOUT */
+
 .header {
     position: fixed;
     top: 50px;
@@ -115,70 +117,81 @@ body {
 
 .content__section {
     min-height: 100vh;
+    align-items: center
 }
+
 
 /*HOME*/
 
 .band__members {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     margin-top: 20vh;
     text-align: left;
 }
 
 /*ABOUT*/
 
-.section__about {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0 0 -245px 0;
+.about {
+    position: relative;
+    margin-left: 290px;
+    margin-bottom: 115px;
 }
 
 .about__photo {
-    width: 790px;
-    height: 520px;
-    border-top: 3px #ec008c solid;
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
 }
 
-.about__description {
-    width: 395px;
-    min-height: 370px;
-    background: #25072e;
-    border-bottom: 3px #ec008c solid;
-    bottom: 245px;
-    right: 690px;
-    box-sizing: border-box;
-    padding: 45px 35px;
+.about__desc-header {
+    margin-bottom: 30px;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__desc {
+    position: absolute;
+    left: -290px;
+    bottom: -115px;
+    width: 380px;
+    padding: 30px;
+    background-color: #25072e;
+    border-bottom: 3px solid #EF008E;
     text-align: left;
-}
-
-.about__subtitle {
-    margin: 0 0 10px 0;
-}
-
-.about__description {
-    margin: 30px 0 0 0;
-    line-height: 18px;
 }
 
 /*CONCERTS*/
 
-.section__concerts {
+.concerts {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
     flex-wrap: wrap;
-} 
+    width: 80%;
+}
 
 .concerts__item {
-    padding: 1% 0 1% 5%;
-    width: 30vw;
+    flex-basis: 50%;
+    padding: 0 0 45px 55px;
 }
+
 .concerts__image {
-    width: 100%;
-    border-bottom: 3px solid  #ec008c;
+    max-width: 100%;
+    border-bottom: 3px solid #EF008E;
+}
+
+.concerts__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.concerts__info-base {
+    flex-grow: 1;
+    text-align: left;
 }
 
 /*VIDEO*/
@@ -221,7 +234,6 @@ iframe {
     display: flex;
     flex-direction: column;
 }
-
 .contact-section__info {
     display: flex;
     flex-direction: row;
@@ -234,6 +246,7 @@ iframe {
 .contact-section__image {
     width: 465px;
 }
+
 .contact-section__address {
     margin-left: 80px;
     color: #CCC8FF;
@@ -249,6 +262,7 @@ iframe {
     padding: 0;
     color: #CCC8FF;
 } 
+
 .form__field {
     font-size: 13px;
     opacity: 0.8;
@@ -259,6 +273,7 @@ iframe {
 .form__label {
     padding: 1% 0 1% 0;
 }
+
 .form__input {
     width: 300px;
     height: 37px;
@@ -267,6 +282,7 @@ iframe {
     border: none;
     border-radius: 3px;
 }
+
 .form__button {
     margin: 25px 0;
 }
@@ -290,4 +306,134 @@ iframe {
 } 
 .social__item img {
     height: 20px;
+}
+
+
+/*Medium screens*/
+
+@media screen and (min-width: 600px) {
+
+    .content__section {
+        min-height: calc(100vh - 200px);
+    }
+    .section__header {
+        margin-bottom: 40px;
+    }
+    .band__members {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .band__members {
+        flex-wrap: nowrap;
+    }
+
+    .concerts {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .concerts__item {
+        flex-basis: 50%;
+        padding: 0 0 45px 55px;
+    }
+     
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1200px) {
+
+    /*HOME*/
+
+    .page__content  {
+        margin-left: 220px;
+        padding: 0 50px
+    }
+
+    .section__header {
+        margin: 40px 0;
+    }
+
+    /*BAND MEMBERS*/
+
+    .band__members {
+        padding-top: 200px;
+    }
+
+    /*ABOUT*/
+
+    .about {
+        position: relative;
+        margin-left: 290px;
+        margin-bottom: 150px;
+    }
+    
+    .about__desc {
+        position: absolute;
+        left: -290px;
+        bottom: -115px;
+        width: 380px;
+        padding: 30px;
+        background-color: #25072e;
+        border-bottom: 3px solid #EF008E;
+    }
+
+    /*CONCERTS*/
+
+    .concerts {
+        width: 80%;
+    }
+
+    /*VIDEO*/
+
+    .video {
+        width: 80%;
+    }
+
+    /*PHOTOS*/
+
+    .section__photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 80%;
+    }
+
+
+    /*CONTACT*/
+
+    .section__contact {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .form {
+        flex-basis: 50%;
+        padding-top: 40px;
+    }
+   
+   
+    /*FOOTER*/
+
+    .social {
+        flex-direction: column;
+        width: 220px;
+        margin-bottom: 50px;
+    }
+
+    .social__item {
+        margin: auto auto 10px 50px;
+        padding: 0;
+    }
+
 }
